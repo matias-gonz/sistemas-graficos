@@ -46,7 +46,7 @@
             position=vec3(2.*(uv.x-0.5),-0.5,2.*(uv.y-0.5));
             modulo = sqrt((uv.x-centro)*(uv.x-centro) + (uv.y-centro)*(uv.y-centro));
             
-            position.y+=normal.y*(sin(modulo*100. - 10.*time)/(modulo*100.));
+            position.y+=(sin(modulo*100. - 30.*time)/(modulo*modulo*1000. +5.));
             // ************************************************************************
 
             vec4 worldPos = uMMatrix*vec4(position, 1.0);                        

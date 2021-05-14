@@ -29,8 +29,8 @@
 var superficie3D;
 var mallaDeTriangulos;
 
-var filas=2;
-var columnas=2;
+var filas=100;
+var columnas=100;
 
 
 function crearGeometria(){
